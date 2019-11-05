@@ -1,4 +1,4 @@
-Heroku marche une fois sur deux mais on peut toujours tenter: https://eventbrite-eva2.herokuapp.com/users/sign_in
+Heroku marche une fois sur deux mais on peut toujours tenter: https://eventbrite-eva2.herokuapp.com
 En revanche en local le site fonctionne très bien, n'hésitez pas à tester.
 
 
