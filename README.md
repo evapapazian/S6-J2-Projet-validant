@@ -1,6 +1,8 @@
-Heroku marche une fois sur deux mais on peut toujours tenter: https://eventbrite-eva2.herokuapp.com
-En revanche en local le site fonctionne très bien, n'hésitez pas à tester.
-
+Après de nombreux tests d'envois d'emails (suite à la création de Users par exemple, avec le mail de bienvenue), je pense que Send grid m'a bloquée. Du coup, le site fonctionne bien en local (local host 3000).
+Le lien heroku est le suivant :https://eventbrite-eva2.herokuapp.com
+A priori, via le lien heroku vous ne pourrez pas vous inscrire, car cela requiert l'envoi d'emails via Send Grid. Peut être essyer en créant un User directement dans la console d'Heroku, et se connecter sur le site avec ses identifiants (lancez directement le seed, ça génère automatiquement 10 users dont le mot de passe est "trucbidule".)
+Pour voir à quoi le site ressemble, il faut donc utiliser le local host.
+On peut sinon essayer en passant par GMail au lieu de Send Grid, en récupérant les clés API de gmail etc (à essayer demain lors de la correction)
 
 1. Introduction
 
