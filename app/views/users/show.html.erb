@@ -1,0 +1,53 @@
+<style>
+	
+h1 {font-family: Courrier New}
+
+
+</style>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page utilisateur</title>
+</head>
+<body class="text-center">
+<h1> Bienvenue sur ta page ! </h1>
+
+<h2> Voici un petit récapitulatif de tes informations:</h2>
+
+<p></br>Prénom :<%= @user.first_name %>
+</br>Nom : <%= @user.last_name %>
+</br>Description : <%= @user.description %> 
+</br>Email : <%= @user.email %> </p>
+
+</br><h2>Modifier tes informations </h2>
+
+<p></br><%= link_to "Modifier l'email et/ou le mot de passe:", edit_user_registration_path %> </p>
+
+</br><h2>La liste de tes évènements: n'hésite pas à en créer des nouveaux! </h2>
+
+<% @event.each do |t| %>
+<p>Ton évènement:
+</br>
+
+</br>Titre: <%=	t.title %> </br>
+Date de début: <%=	t.start_date %> </br>
+Prix: <%= t.price %> </br>
+
+<%= link_to "Plus d'infos", event_path(t) %> </p>
+
+
+<% end %> 
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+
+<h1> Bienvenue sur Eventbrite bis ! </h1>
+
+<h2> Une multitude d'évènements t'attendent, n'hésite pas à les rejoindre ! </h2>
+
+<p>
+</br>
+<% @event.each do |index|  %>
+</br>
+<%=	index.title %>
+</br>
+Date: <%=	index.start_date%>
+</br>
+Prix: <%=	index.price %>€
+</br>
+<%= link_to "Page de l'event", event_path(index) %> 
+<%end%>
+</p>
+
+

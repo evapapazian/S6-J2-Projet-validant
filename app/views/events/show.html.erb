@@ -1,0 +1,12 @@
+<h1> <%= @event.title %></h1>
+
+</br>
+<p> Qu'est-ce qu'il s'y passe ? <%= @event.description %> </p> 
+<p> Qui a lancé ce super event ? <%= @event.administrator.first_name %> </p>
+<p> Contacte directement le créateur pour plus d'infos: <%= @event.administrator.email %> </p>
+</br>
+<h2> Infos importantes: </h2>
+<p> Prix: <%= @event.price %>€ </p>
+<p> Lieu: <%= @event.location %> </p>
+<p> Date de début: <%= @event.start_date %> </p>
+

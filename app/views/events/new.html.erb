@@ -1,0 +1,44 @@
+<html>
+  <body>
+    <!-- ... -->
+<p>
+    <h1> Création d'un évènement </h1>
+
+    <%= form_tag url_for(action: 'create'), method: "post" do %>
+   <!-- <input type="hidden" name="authenticity_token" value= <%= form_authenticity_token %> -->
+   <p>   <%= label_tag 'Date de début AAAA-MM-JJ' %> </p>
+      <%= text_field_tag 'start_date'%>
+      <br /> <br />
+
+    <p>  <%= label_tag 'Durée' %> </p>
+      <%= text_area_tag 'duration' %>
+      <br /> <br />
+
+     <p>  <%= label_tag "Titre de l'event" %> </p>
+      <%= text_field_tag 'title'%>
+      <br /> <br />
+
+     <p>  <%= label_tag 'Description' %> </p>
+      <%= text_field_tag 'description'%>
+      <br /> <br />
+
+     <p>  <%= label_tag 'Prix' %> </p>
+      <%= text_field_tag 'price'%>
+      <br /> <br />
+
+      <p> <%= label_tag 'Localisation' %> </p>
+      <%= text_field_tag 'location'%>
+      <br /> <br />
+  </p>
+
+      
+
+      
+
+  <p>    <%= submit_tag "Créer l'évènement" %> </p>
+
+    <% end %>
+
+    <!-- ... -->
+  </body>
+</html>
